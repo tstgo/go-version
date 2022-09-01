@@ -29,3 +29,5 @@ replace后的版本号可以省略
 6. `go get github.com/tstgo/calculator@v2.0.0-prev2`
 > invalid version: go.mod has post-v2 module path "github.com/tstgo/calculator/v2" at revision v2.0.0-prev2`
 原来是module已经变了，所以应该执行`go get github.com/tstgo/calculator/v2@v2.0.0-prev2`
+
+1. 使用`go.work`后，所依赖的模块可以位于磁盘的任意位置，此时`go mod tidy`依然会去仓库拉取go.mod中对应版本的代码，但不会被使用，项目会使用`go.work`中所`use`的代码

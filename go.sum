@@ -1,2 +1,4 @@
 github.com/tstgo/calculator/v2 v2.0.0-prev2 h1:ixePv5vM4h4xP62aAGzIDevP2o3JYf3x5cctGtt1YD8=
 github.com/tstgo/calculator/v2 v2.0.0-prev2/go.mod h1:VVnQCruLRtbty3y0oVH63UBhA+CxRFdcxiERpl4QGRg=
+github.com/tstgo/cond v0.0.0-20220901082334-d844bfad35e4 h1:nv6YW6jL7vj9gkpogVICglde0HanFxrw/oUmQbIR0zo=
+github.com/tstgo/cond v0.0.0-20220901082334-d844bfad35e4/go.mod h1:yY61kyTydR0tFQ8eMKNZH8Y7ZsccNhCIi2dhIgWYYYg=
