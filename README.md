@@ -18,3 +18,6 @@
 
 3. `replace github.com/tstgo/conv => /src/test/conv`
 replace后的版本号可以省略
+
+4. `go get github/tstgo/calculator@v1.0.0`
+在执行上述命令之前，在github上创建了v1.0.0的tag及release，执行后本地依赖版本被更新为v1.0.0

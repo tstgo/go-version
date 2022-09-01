@@ -1,7 +1,7 @@
 /*
  * @Author: leoking
  * @Date: 2022-09-01 16:24:01
- * @LastEditTime: 2022-09-01 16:57:00
+ * @LastEditTime: 2022-09-01 17:09:03
  * @LastEditors: leoking
  * @Description:
  */
@@ -17,7 +17,7 @@ import (
 func main() {
 	fmt.Println("hello,go-version")
 	fmt.Println(calculator.Add[int](1, 3))
-	// 此方法不存在
-	// fmt.Println(calculator.Divide(2,4))
+	// 将dev分支的divide合并值main后此方法存在了
+	fmt.Println(calculator.Divide(2, 0))
 	fmt.Println(conv.String(1.1))
 }
