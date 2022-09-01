@@ -21,3 +21,11 @@ replace后的版本号可以省略
 
 4. `go get github/tstgo/calculator@v1.0.0`
 在执行上述命令之前，在github上创建了v1.0.0的tag及release，执行后本地依赖版本被更新为v1.0.0
+
+5. `go get github.com/tstgo/calculator@v2.0.0-pre`
+在此之前从dev分支直接创建tagv2.0.0-pre并标记为pre-release，执行后报错
+> go: github.com/tstgo/calculator@v2.0.0-pre: invalid version: module contains a go.mod file, so module path must match major version ("github.com/tstgo/calculator/v2")
+
+6. `go get github.com/tstgo/calculator@v2.0.0-prev2`
+> invalid version: go.mod has post-v2 module path "github.com/tstgo/calculator/v2" at revision v2.0.0-prev2`
+原来是module已经变了，所以应该执行`go get github.com/tstgo/calculator/v2@v2.0.0-prev2`
