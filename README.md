@@ -15,3 +15,6 @@
 
 2. `go get -u github.com/tstgo/calculator`
 执行完上述命令后，本地代码找不到divide函数，证明拉取的是默认分支main，版本号为**v0.0.0-20220901075041-137910462925**，可以看到时间戳较dev旧，最后面是commitid的前几位
+
+3. `replace github.com/tstgo/conv => /src/test/conv`
+replace后的版本号可以省略
